@@ -34,3 +34,8 @@ models:
       +materialized: view
     bronze:
       +materialized: table
+      +schema: bronze
+
+seeds:
+  ag_dbt_project:
+    +schema: seeds
