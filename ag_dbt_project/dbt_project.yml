@@ -34,3 +34,14 @@ models:
       +materialized: view
     bronze:
       +materialized: table
+      +schema: bronze
+    silver:
+      +materialized: table
+      +schema: silver
+    gold:
+      +materialized: table
+      +schema: gold
+
+seeds:
+  ag_dbt_project:
+    +schema: seeds
