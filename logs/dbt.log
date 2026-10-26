@@ -174,3 +174,82 @@ Happy modeling!
 [0m12:12:42.745600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7E12E43E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7E1237530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7D1BA3350>]}
 [0m12:12:42.746940 [debug] [MainThread]: Flushing usage events
 [0m12:12:44.197455 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:28:09.395620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E555D5400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E525E3250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E56567C50>]}
+
+
+============================== 05:28:09.401928 | 12c2e9a8-d2ce-4d17-895d-69a2eb526ab5 ==============================
+[0m05:28:09.401928 [info ] [MainThread]: Running with dbt=1.9.11
+[0m05:28:09.403184 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AGWANDA\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m05:28:09.404060 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m05:28:09.404920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '12c2e9a8-d2ce-4d17-895d-69a2eb526ab5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E5657CD60>]}
+[0m05:28:09.429915 [info ] [MainThread]: dbt version: 1.9.11
+[0m05:28:09.431323 [info ] [MainThread]: python version: 3.13.1
+[0m05:28:09.433004 [info ] [MainThread]: python path: C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\python.exe
+[0m05:28:09.434073 [info ] [MainThread]: os info: Windows-11-10.0.22621-SP0
+[0m05:28:10.848228 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m05:28:10.848820 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m05:28:10.849216 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m05:28:11.597571 [info ] [MainThread]: Using profiles dir at C:\Users\AGWANDA\.dbt
+[0m05:28:11.598598 [info ] [MainThread]: Using profiles.yml file at C:\Users\AGWANDA\.dbt\profiles.yml
+[0m05:28:11.599458 [info ] [MainThread]: Using dbt_project.yml file at D:\ALX Data\Data Engineering\DBT\ag_dbt_project\dbt_project.yml
+[0m05:28:11.600222 [info ] [MainThread]: adapter type: databricks
+[0m05:28:11.601095 [info ] [MainThread]: adapter version: 1.10.2
+[0m05:28:11.601909 [info ] [MainThread]: Configuration:
+[0m05:28:11.602799 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:28:11.603778 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m05:28:11.605069 [info ] [MainThread]: Required dependencies:
+[0m05:28:11.606043 [debug] [MainThread]: Executing "git --help"
+[0m05:28:11.696513 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:28:11.697133 [debug] [MainThread]: STDERR: "b''"
+[0m05:28:11.697618 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:28:11.698188 [info ] [MainThread]: Connection:
+[0m05:28:11.698824 [info ] [MainThread]:   host: dbc-1ca40829-8796.cloud.databricks.com
+[0m05:28:11.699390 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/0b66337d0a553e5a
+[0m05:28:11.699976 [info ] [MainThread]:   catalog: dbt_tutorial_dev
+[0m05:28:11.700521 [info ] [MainThread]:   schema: default
+[0m05:28:11.701359 [info ] [MainThread]: Registered adapter: databricks=1.10.2
+[0m05:28:12.366681 [error] [MainThread]: Encountered an error:
+'types.SimpleNamespace' object has no attribute 'file_format'
+[0m05:28:12.371155 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 158, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 108, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\debug.py", line 144, in run
+    connection_status = self.test_connection()
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\debug.py", line 438, in attempt_connection
+    register_adapter(profile, get_mp_context())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\adapters\factory.py", line 203, in register_adapter
+    FACTORY.register_adapter(config, mp_context, adapter_registered_log_level)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\adapters\factory.py", line 118, in register_adapter
+    adapter: Adapter = adapter_type(config, mp_context)  # type: ignore
+                       ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\adapters\databricks\impl.py", line 209, in __init__
+    self.add_catalog_integration(constants.DEFAULT_UNITY_CATALOG)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\adapters\base\impl.py", line 356, in add_catalog_integration
+    return self._catalog_client.add(catalog_integration)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\adapters\catalogs\_client.py", line 39, in add
+    self.__catalog_integrations[config.name] = factory(config)
+                                               ~~~~~~~^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\adapters\databricks\catalogs\_unity.py", line 14, in __init__
+    super().__init__(config)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\AGWANDA\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\adapters\catalogs\_integration.py", line 129, in __init__
+    self.file_format: Optional[str] = config.file_format
+                                      ^^^^^^^^^^^^^^^^^^
+AttributeError: 'types.SimpleNamespace' object has no attribute 'file_format'. Did you mean: 'table_format'?
+
+[0m05:28:12.373022 [debug] [MainThread]: Command `dbt debug` failed at 05:28:12.372833 after 3.24 seconds
+[0m05:28:12.373540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E58B05370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E61CAB130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E61CCC450>]}
+[0m05:28:12.373994 [debug] [MainThread]: Flushing usage events
+[0m05:28:13.679589 [debug] [MainThread]: An error was encountered while trying to flush usage events
